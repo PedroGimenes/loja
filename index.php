@@ -4,7 +4,7 @@
 <body>
     <div class="container">
         <h1>Bem vindo ao 1 Sistema com CRUD</h1>
-        <h2>Anderson Vanin</h2>
+        <h2>Pedro Gimenes</h2>
         <div class="btn-group" role="group" aria-label="Basic mixed styles example">
            <a href="form_cadastrar.php" type="button" class="btn btn-success">Cadastrar</a>
            <a href="listar.php" type="button" class="btn btn-info">Listar</a>
