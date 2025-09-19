@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Painel Administrativo</title>
+    <link rel="stylesheet" href="styles.css">
+     <style>
+        * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    background-color: #ffffff;
+    width: 400px;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 12px 30px rgba(0,0,0,0.2);
+    text-align: center;
+}
+
+header h1 {
+    margin-bottom: 30px;
+    font-size: 24px;
+    color: #333;
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-between;
+}
+
+.btn {
+    width: 45%;
+    padding: 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.cadastrar {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.listar {
+    background-color: #2196F3;
+    color: white;
+}
+
+.btn:hover {
+    opacity: 0.8;
+}
+.btn-close {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background: transparent;
+    border: none;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: default; 
+    color: black;
+    transition: color 0.3s ease;
+    user-select: none; 
+}
+
+.btn-close:hover {
+    color: black;
+}
+     </style>
+</head>
+<body>
+    <div class="container">
+        <button onclick="window.location.href='index.html'" class="btn-close" aria-label="Fechar painel">&times;</button>
+        <header>
+            <h1>Painel Administrativo</h1>
+        </header>
+        <div class="buttons">
+            <button onclick="window.location.href='form_cadastrar.php'" class="btn cadastrar">Cadastrar</button>
+            <button onclick="window.location.href='listar.php'" class="btn listar">Listar</button>
+        </div>
+    </div>
+</body>
+</html>

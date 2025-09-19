@@ -62,6 +62,14 @@ ALTER TABLE `produtos`
 --
 ALTER TABLE `produtos`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+
+  INSERT INTO `produtos` (`nome`, `preco`, `quantidade`) VALUES
+('Mesa', 246.50, 60),
+('Cadeira de Escritorio', 159.90, 60),
+('Sofá', 2000.50, 15),
+('Relógio de Pulso', 349.50, 20),
+('Notebook', 599.90, 30);
+
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
